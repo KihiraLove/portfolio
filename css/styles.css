@@ -11,12 +11,25 @@ body, ul {
 .header-section {
     top: 79px;
     position: relative;
+    z-index: 9;
     /*margin-bottom: 220px;*/
-    background-image: url('../img/background.png');
+    /*background-image: url('../img/background.png');
     background-repeat: no-repeat;
     background-size: 9600px 1080px;
     background-position-y: -300px;
-    /*background: linear-gradient(180deg, #DBEBF4 50%, white 50%);*/
+    background: linear-gradient(180deg, #DBEBF4 50%, white 50%);*/
+}
+.header-section:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    right:0;
+    bottom: 53%;
+    left: 0;
+
+    background-color: #DBEBF4;
 }
 
 h1 {
